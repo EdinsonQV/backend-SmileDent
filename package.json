@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/index.js",
     "start": "node src/index.js",
-    "deploy": "npm run build && npm run start"
+    "build": "npm run clean && webpack"
   },
   "author": "Edison",
   "license": "ISC",
@@ -24,5 +24,9 @@
     "moongose": "^1.0.0",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   }
 }
